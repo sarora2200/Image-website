@@ -1,0 +1,71 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+body{
+    /* Add background image */
+    background-image: url('image.jpg');
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(171, 107, 195, 0.5)), to(rgba(0, 0, 0, 0.5))), url('image.jpg');
+    /* Set background size to cover entire page */
+    background-size: cover;
+    /* Center the background image */
+    background-position: center;
+    /* Ensure the image is fixed so it doesn't scroll with the content */
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+}
+h2{
+    background-color: rgba(20, 2, 45, 0.467);
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    font-size: 40px;
+}
+.prompt{
+    background-color: rgba(20, 2, 45, 0.666);
+    padding: 5px;
+    width: 620px;
+    border: 3px solid #36383da2;
+    border-radius: 10px;
+}
+input, button{
+    padding: 10px;
+    border: none;
+    font-size: 20px;
+    color: white;
+}
+input{
+    background-color: rgba(20, 2, 45, 0.547);
+    width: 75%;
+    outline: none;
+}
+button{
+    background-color: #8671988c;
+    cursor: pointer;
+    width: 20%;
+    border-radius: 10px;
+}
+button:hover{
+    background-color: #714d7e;
+}
+.images{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+.images div{
+    height: 300px;
+    background-color: rgba(111, 64, 142, 0.851);
+    width: 300px;
+    border-radius: 10px;
+    border: 3px solid #4e1c60d5;
+}
+.images div img{
+    width: 100%;
+}
+```
