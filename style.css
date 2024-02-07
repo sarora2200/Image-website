@@ -3,6 +3,65 @@
     margin: 0;
     font-family: sans-serif;
 }
+header {
+    background-color: #4e1c60c6;
+    padding: 10px 10px;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999; /* Ensure the header appears above other content */
+}
+.logo {
+    width: 70px; /* Adjust the width as needed */
+    height: 50px; /* Maintain aspect ratio */
+    margin-left: 20px; /* Adjust margin as needed */
+    margin-right: 900px; /* Adjust margin as needed */
+    border-radius: 10px; /* Add border radius for rounded corners */
+    border: 2px solid#603a6c99  ; /* Add border with white color */
+    transition: transform 0.3s ease; /* Add transition effect for smooth hover */
+}
+
+.logo:hover {
+    transform: scale(1.1); /* Scale up the logo slightly on hover */
+}
+/* Add a margin to the button to separate it from the header */
+header button {
+    background-color: #8671988c;
+    cursor: pointer;
+    width: 150px;
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
+    font-size: 20px;
+    color: white;
+    margin: 10px;
+    transition: background-color 0.3s ease; /* Add transition effect for smooth hover */
+}
+/* Add margin-left: auto; to move the second button to the right */
+header button:first-child {
+    margin-left: auto;
+    margin-right: 3px;
+    row-gap: 2px;  
+    transition: transform 0.3s ease;
+}
+/* Add margin-right: 20px; to the second button to separate it from the first button */ 
+header button:last-child {
+    margin-right: 40px;
+    transition: transform 0.3s ease;
+}  
+/* Add hover effect to the button */
+button:hover {
+    background-color: #d1b3dc;
+    transform: scale(1.1);
+} 
 body{
     /* Add background image */
     background-image: url('image.jpg');
@@ -20,6 +79,7 @@ body{
     height: 100vh;
 }
 h2{
+    margin-top: 60px;
     background-color: rgba(20, 2, 45, 0.467);
     padding: 10px;
     border-radius: 10px;
@@ -68,4 +128,3 @@ button:hover{
 .images div img{
     width: 100%;
 }
-```
