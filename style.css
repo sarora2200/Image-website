@@ -78,6 +78,41 @@ body{
     justify-content: space-around;
     height: 100vh;
 }
+.container {
+    margin-top: 100px;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 60px;
+    background-color: rgba(20, 2, 45, 0.467);
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    font-size: 40px;
+    max-width: 80%; /* Limit the width of the heading to improve readability */
+    margin: 0 auto; /* Center the heading horizontally */
+}
+
+p {
+    margin: 20px auto; /* Adjust the margin for better alignment */
+    background-color: rgba(20, 2, 45, 0.467);
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    max-width: 80%; /* Limit the width of the paragraph to improve readability */
+}
+
+.landing_page_image {
+    width: 100%; /* Adjust the width of the image to fill its container */
+    max-width: 500px; /* Limit the maximum width of the image */
+    height: auto; /* Maintain the aspect ratio of the image */
+    border-radius: 10px;
+    border: 3px solid #4e1c60d5;
+    margin-top: 10px; /* Add margin to separate the image from other elements */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+}
 h2{
     margin-top: 60px;
     background-color: rgba(20, 2, 45, 0.467);
