@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <header>
+        <a href="index.html">
+            <img src="logo.png" alt="Logo" class="logo">
+        </a>
+        <a class="login" href="login.html">
+            <button id="loginButton">login</button>
+        </a>
+        <a class="register" href="register.html">
+            <button id="registerButton">register</button>
+        </a>
+    </header>
+</head>
+<body>
+    <!-- title of the project -->
+    <h2>AI Images Generator</h2>
+    <!-- result of images -->
+    <div class="images">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <!-- button to generate images -->
+    <div class="prompt">
+        <input id="inp" type="text">
+        <button onclick="getImage()">Generate</button>
+    </div>
+        <script src="script.js"></script>
+</body>
+</html>
